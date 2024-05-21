@@ -12,12 +12,13 @@ export const updateName = async (previousState: any, formData: any) => {
   return { name: "Name is required" };
 };
 
-export async function formSubmit(name: string) {
+export async function formSubmit(name?: string) {
   if (!name) {
     return { error: "Name is required" };
   }
 
   // Todo: Update name via API
+  await new Promise((r) => setTimeout(r, 3000));
 }
 
 export async function deliverMessage(message: any) {

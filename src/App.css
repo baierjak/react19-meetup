@@ -3,8 +3,31 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
+}
+
+h1,
+h2 {
+  color: #00a6ff;
+}
+
+h3 {
+  color: #00fb69;
+}
+
+button {
+  cursor: pointer;
+  background: #333;
+  color: #ab00fb;
+  font-weight: 700;
+  font-size: 22px;
+  padding: 10px 25px;
+  outline: none;
+  box-shadow: none;
+  text-shadow: none;
+  border: 1px solid #ab00fb;
+  border-radius: 50px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -19,7 +42,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
 }

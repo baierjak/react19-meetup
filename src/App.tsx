@@ -1,27 +1,18 @@
 import logo from "./logo.png";
 import "./App.css";
 
-import { Form } from "./Form";
-import { ContextExample } from "./ContextExample";
-import { PromiseUseExample } from "./PromiseUseExample";
-import { ActionButton } from "./ActionButton";
-import OptimisticChat from "./OptimisticChat";
+import { Features } from "./Features";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>čaukísek pupíčci</h1>
         <img src={logo} className="App-logo" alt="logo" />
+        <br />
+        <br />
 
-        <ActionButton />
-
-        <Form />
-
-        <ContextExample />
-
-        <PromiseUseExample />
-
-        <OptimisticChat />
+        <Features />
       </header>
     </div>
   );

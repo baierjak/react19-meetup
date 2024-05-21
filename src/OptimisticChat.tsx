@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { useOptimistic, useState, useRef } from "react";
 import { deliverMessage } from "./actions";
 
