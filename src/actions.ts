@@ -26,5 +26,5 @@ export async function deliverMessage(message: any) {
   if (Math.random() < 0.3) {
     return { message };
   }
-  return { error: "Message failed :(" };
+  return { error: "Zpráva se neodeslala :(" };
 }

@@ -17,8 +17,8 @@ export const Form = () => {
 
   return (
     <form action={submitAction}>
-      <Input ref={inputRef} />
-      {/* <InputRef ref={inputRef} /> */}
+      {/* <Input ref={inputRef} /> */}
+      <InputRef ref={inputRef} />
 
       <SubmitButton />
       {/* {error && <p>{JSON.stringify(error)}</p>} */}

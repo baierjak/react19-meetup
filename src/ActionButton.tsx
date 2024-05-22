@@ -10,7 +10,7 @@ export const ActionButton = () => {
   const submitAction = async () => {
     startTransition(async () => {
       const newName = "Jožo";
-      const res: { error?: string } | undefined = await formSubmit(newName);
+      const res: { error?: string } | undefined = await formSubmit();
 
       if (res?.error) {
         setError(res?.error);

@@ -22,7 +22,7 @@ const ContextComponent = () => {
       <h2>Context example</h2>
       <p>Context data: {JSON.stringify(res)}</p>
 
-      <title>{res.name}</title>
+      {/* <title>{res.name}</title> */}
     </>
   );
 };
