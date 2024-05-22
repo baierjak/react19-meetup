@@ -9,13 +9,13 @@ export const Features = () => {
     <>
       {/* <ActionButton /> */}
 
-      <Form />
+      {/* <Form /> */}
+
+      {/* <OptimisticChat /> */}
 
       {/* <ContextExample /> */}
 
       {/* <PromiseUseExample /> */}
-
-      {/* <OptimisticChat /> */}
     </>
   );
 };

@@ -30,6 +30,43 @@ button {
   border-radius: 50px;
 }
 
+form,
+input[type="text"] {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+label {
+  font-size: 22px;
+  margin-bottom: 12px;
+  display: block;
+  color: #de9cfc;
+  font-weight: medium;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  max-width: 50%;
+}
+
+input[type="text"] {
+  background: #333;
+  color: #ab00fb;
+  font-weight: 700;
+  font-size: 22px;
+  padding: 10px 25px;
+  outline: none;
+  box-shadow: none;
+  text-shadow: none;
+  border: 1px solid #ab00fb;
+  border-radius: 50px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

@@ -7,15 +7,15 @@ interface SuspensedComponentProps {
 const SuspensedComponent = ({ promise }: SuspensedComponentProps) => {
   let res;
 
-  if (Math.random() < 0.5) {
-    res = use(promise);
-  }
+  // if (Math.random() < 0.5) {
+  res = use(promise);
+  // }
 
-  return <p>{JSON.stringify(res)}</p>;
+  return <p>{res.value}</p>;
 };
 
 const SuspensedComponentWrapper = ({ promise }: SuspensedComponentProps) => (
-  <Suspense fallback={<p>waiting for data...</p>}>
+  <Suspense fallback={<p>čekám na vtípek...</p>}>
     <SuspensedComponent promise={promise} />
   </Suspense>
 );

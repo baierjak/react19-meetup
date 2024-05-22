@@ -3,8 +3,14 @@ import { forwardRef } from "react";
 export const Input = forwardRef<HTMLInputElement>((props, ref) => {
   return (
     <label>
-      Name
-      <input ref={ref} type="text" name="name" {...props} />
+      Jméno
+      <input
+        ref={ref}
+        type="text"
+        name="name"
+        placeholder="Zadejte jméno"
+        {...props}
+      />
     </label>
   );
 });

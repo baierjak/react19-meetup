@@ -4,18 +4,18 @@ interface TestContextType {
   name: string;
 }
 
-const TestContext = createContext<TestContextType>({ name: "Jakub" });
+const TestContext = createContext<TestContextType>({ name: "Testík" });
 
 export const ContextExample = () => {
   return (
-    <TestContext value={{ name: "Jakub1" }}>
+    <TestContext value={{ name: "Nejlepší react verze" }}>
       <ContextComponent />
     </TestContext>
   );
 };
 
 const ContextComponent = () => {
-  const res = use<TestContextType>(TestContext);
+  const res = use(TestContext);
 
   return (
     <>
