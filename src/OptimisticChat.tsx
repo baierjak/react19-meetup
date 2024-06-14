@@ -45,9 +45,20 @@ function Thread({ messages, sendMessage }) {
   );
 
   return (
-    <>
+    <div style={{ width: "60%", display: "flex", flexDirection: "column" }}>
       {optimisticMessages.map((message: Message, index: number) => (
-        <div key={index}>
+        <div
+          key={index}
+          style={{
+            padding: 8,
+            backgroundColor: "#a431ff66",
+            borderRadius: 8,
+            alignSelf: Math.random() > 0.5 ? "flex-start" : "flex-end",
+            width: "30%",
+            marginBottom: 12,
+            fontSize: 16,
+          }}
+        >
           {message.text}
           {!!message.sending && <small> (Sending...)</small>}
           {!!message.error && <small> ({message.error})</small>}
@@ -57,6 +68,6 @@ function Thread({ messages, sendMessage }) {
         <input type="text" name="message" placeholder="type message..." />
         <button type="submit">Send</button>
       </form>
-    </>
+    </div>
   );
 }

@@ -7,14 +7,14 @@ import OptimisticChat from "./OptimisticChat";
 export const Features = () => {
   return (
     <>
-      {/* <Form /> */}
-      {/* <ActionButton /> */}
+      <Form />
+      <ActionButton />
 
-      {/* <OptimisticChat /> */}
+      <OptimisticChat />
 
-      {/* <PromiseUseExample /> */}
+      <PromiseUseExample />
 
-      {/* <ContextExample /> */}
+      <ContextExample />
     </>
   );
 };
